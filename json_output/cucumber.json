@@ -1,0 +1,489 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 23,
+        "name": "Kayak Search Scenario",
+        "description": "",
+        "id": "kayak-search-page;kayak-search-scenario;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7768944117,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on Kayak Search page",
+            "match": {
+              "location": "HomePageStepDefination.user_is_on_Kayak_Search_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 866977973,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user verify the pageTitle \"Search Flights, Hotels \u0026 Rental Cars | KAYAK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Search Flights, Hotels \u0026 Rental Cars | KAYAK",
+                  "offset": 27
+                }
+              ],
+              "location": "HomePageStepDefination.user_verify_the_pageTitle(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7865197413,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user Uncheck the default Selection",
+            "match": {
+              "location": "HomePageStepDefination.user_Uncheck_the_default_Selection()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4813852717,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enters  From Location \"Atlanta (ATL)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Atlanta (ATL)",
+                  "offset": 28
+                }
+              ],
+              "location": "HomePageStepDefination.user_enters_From_Location(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1615341865,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user enters To Location \"San Francisco (SFO)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "San Francisco (SFO)",
+                  "offset": 25
+                }
+              ],
+              "location": "HomePageStepDefination.user_enters_To_Location(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3927892613,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User Select the Departure Date \"27, April 2020\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "27, April 2020",
+                  "offset": 32
+                }
+              ],
+              "location": "HomePageStepDefination.user_Select_the_Departure_Date(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1901447637,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user Select the Arrival Date  \"10, May 2020\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10, May 2020",
+                  "offset": 31
+                }
+              ],
+              "location": "HomePageStepDefination.user_Select_the_Arrival_Date(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2258993276,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user clicks Search Icon",
+            "match": {
+              "location": "HomePageStepDefination.user_clicks_Search_Icon()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6832545183,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user dismiss the pop up",
+            "match": {
+              "location": "HomePageStepDefination.user_dismiss_the_pop_up()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2505892881,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user click on the deals",
+            "match": {
+              "location": "HomePageStepDefination.user_click_on_the_deals()"     
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user scroll down for deal details",
+            "match": {
+              "location": "HomePageStepDefination.user_scroll_down_for_deal_details()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user verifies departure \"Atlanta (ATL)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Atlanta (ATL)",
+                  "offset": 25
+                }
+              ],
+              "location": "HomePageStepDefination.user_verifies_departure(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user verifies arrival \"San Francisco (SFO)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "San Francisco (SFO)",
+                  "offset": 23
+                }
+              ],
+              "location": "HomePageStepDefination.user_verifies_arrival(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "close the Browser",
+            "match": {
+              "location": "HomePageStepDefination.close_the_Browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "Kayak Search Scenario",
+        "description": "",
+        "id": "kayak-search-page;kayak-search-scenario;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7839766261,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on Kayak Search page",
+            "match": {
+              "location": "HomePageStepDefination.user_is_on_Kayak_Search_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1726694954,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user verify the pageTitle \"Search Flights, Hotels \u0026 Rental Cars | KAYAK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Search Flights, Hotels \u0026 Rental Cars | KAYAK",
+                  "offset": 27
+                }
+              ],
+              "location": "HomePageStepDefination.user_verify_the_pageTitle(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12510751408,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user Uncheck the default Selection",
+            "match": {
+              "location": "HomePageStepDefination.user_Uncheck_the_default_Selection()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6633199550,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enters  From Location \"Denver (DEN)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Denver (DEN)",
+                  "offset": 28
+                }
+              ],
+              "location": "HomePageStepDefination.user_enters_From_Location(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6669592706,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user enters To Location \"New Orleans (MSY)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "New Orleans (MSY)",
+                  "offset": 25
+                }
+              ],
+              "location": "HomePageStepDefination.user_enters_To_Location(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4526058377,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User Select the Departure Date \"10, April 2020\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10, April 2020",
+                  "offset": 32
+                }
+              ],
+              "location": "HomePageStepDefination.user_Select_the_Departure_Date(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2273508420,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user Select the Arrival Date  \"20, May 2020\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20, May 2020",
+                  "offset": 31
+                }
+              ],
+              "location": "HomePageStepDefination.user_Select_the_Arrival_Date(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user clicks Search Icon",
+            "match": {
+              "location": "HomePageStepDefination.user_clicks_Search_Icon()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user dismiss the pop up",
+            "match": {
+              "location": "HomePageStepDefination.user_dismiss_the_pop_up()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user click on the deals",
+            "match": {
+              "location": "HomePageStepDefination.user_click_on_the_deals()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user scroll down for deal details",
+            "match": {
+              "location": "HomePageStepDefination.user_scroll_down_for_deal_details()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user verifies departure \"Denver (DEN)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Denver (DEN)",
+                  "offset": 25
+                }
+              ],
+              "location": "HomePageStepDefination.user_verifies_departure(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user verifies arrival \"New Orleans (MSY)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "New Orleans (MSY)",
+                  "offset": 23
+                }
+              ],
+              "location": "HomePageStepDefination.user_verifies_arrival(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "close the Browser",
+            "match": {
+              "location": "HomePageStepDefination.close_the_Browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Kayak Search Page",
+    "description": "",
+    "id": "kayak-search-page",
+    "keyword": "Feature",
+    "uri": "C:/Java_sourcecodefolder/KayakBDD2/src/main/java/com/qa/features/kayak.feature"
+  }
+]
