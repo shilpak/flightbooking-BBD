@@ -6,3 +6,6 @@ target/
 .project
 
 
+# ignore project-specific directories
+json_output/
+
