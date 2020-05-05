@@ -7,13 +7,19 @@ TODO:
 ================
 (1) First thing I noticed when landing on this project is the ./target/ directory was committed.  This isn't something that is normally committed in a Java project.  The reason being everything in the target directory is created by the compiler, and each time the project is compiled it'll be different.  So its useless to share your compiled files via source control because I can't use them.  When I compile I'll have to compile .class files for my machine, not yours.
 
+Tracey fixed with .gitignore file
+
+
+
 (2) Second thing I noticed was the .classpath and .project files were committed.  Typically I don't commit the .classpath and .project files because these are unique to each developer's setup.  For example I may not be using eclipse at all, or I may have mine setup differently than yours.  We want to avoid anything that only you or your personal machine's configuration or setup can use.
+
+Tracey fixed with .gitignore file
+
+
 
 (3) Same issue for the json_output directory.  This is the results of your personal Cucumber execution.  We don't want your results saved in the project.  Typically we'd upload them to some permanent storage for consumption by the larger project, but we'll work on that much later down the road.
 
-To correct: remove those directories and files from being tracked by git.  -THEN- you should implement a .gitignore file, which will tell git to ignore those files from this point forward.
-
-
+Tracey fixed with .gitignore file
 
 
 
@@ -32,11 +38,13 @@ Here are a few good guides for markdown formatting, or just Google it:
 https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html
 https://www.markdownguide.org/basic-syntax/
 
+Let's skip #5 for now.  It's not very important at this time, more of a nice to have.
+
 
 
 (6) First technical problem:  The project won't build on my system.  Maven does not know what version of Java to use.  Since Maven is the build management system you'll need to figure out how to configure Maven so that the system knows what version of Java this project should be built with.  (Hint: I'd expect it to be at least Java 11 if not higher.)
 
-
+Tracey fixed.  Have a look at pom.xml, lines 16 and 17.  There I define both the source and target versions of Java.  I assumed you're using Java 11.  If not change these values to match whatever version of Java you're using and I'll change my workspace to match yours.
 
 
 
