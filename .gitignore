@@ -1,0 +1,8 @@
+# ignore compiled classes and resources
+target/
+
+# ignore IDE files
+.classpath
+.project
+
+
