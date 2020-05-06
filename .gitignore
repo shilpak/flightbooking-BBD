@@ -1,7 +1,8 @@
-# ignore all files in any directory named target
+# ignore all files in directory named target
 target/
-# ignore all files in any directory named json_output
+# ignore all files in directory named json_output
 json_output/
 # ignore files
-*.classpath
-*.project
+.classpath
+.project
+
