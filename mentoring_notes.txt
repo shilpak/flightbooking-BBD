@@ -9,7 +9,7 @@ TODO:
 
 Shilpa added the .gitignore file in master as was able to make changes in the branch.
 Tracey fixed with .gitignore file
-
+Shilpa fixed here .gitignore file in master. Removed the * mark "*.classpath".
 
 
 (2) Second thing I noticed was the .classpath and .project files were committed.  Typically I don't commit the .classpath and .project files because these are unique to each developer's setup.  For example I may not be using eclipse at all, or I may have mine setup differently than yours.  We want to avoid anything that only you or your personal machine's configuration or setup can use.
@@ -27,6 +27,7 @@ Tracey fixed with .gitignore file
 
 
 (4) Understand the structure of a Maven project.  At the root of every Maven project there is a "./src" directory.  Then you have "./src/main/" and "./src.test".  Typically no test classes or resources go in the ".src/main" directories.  That directory is strictly for application code.  Since this project has no application, all of the test code, including anything to do with running your cucumber tests should go in the "./src/test" directory.
+Shilpa moved the files and folder from .src/main to .src/test in the master. Need to make same changes in the branch(LearningKAyakBBD).
 
 To correct:  Move the files to their appropriate locations then I would suggest studying up on Maven.  It is important to have a good understanding of tools such as Maven and _why_ its projects are built this way:
 
@@ -47,10 +48,11 @@ Let's skip #5 for now.  It's not very important at this time, more of a nice to 
 
 
 (6) First technical problem:  The project won't build on my system.  Maven does not know what version of Java to use.  Since Maven is the build management system you'll need to figure out how to configure Maven so that the system knows what version of Java this project should be built with.  (Hint: I'd expect it to be at least Java 11 if not higher.)
-Shilpa - I am using java 1.8.0_251 version.
+
 
 Tracey fixed.  Have a look at pom.xml, lines 16 and 17.  There I define both the source and target versions of Java.  I assumed you're using Java 11.  If not change these values to match whatever version of Java you're using and I'll change my workspace to match yours.
 
+Shilpa - I am using java 1.8.0_251 version.
 
 
 
