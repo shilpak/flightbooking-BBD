@@ -1,0 +1,58 @@
+We'll use this file as a checklist, a TODO list, or a task guide of sorts.  I (Tracey) will list things I'd want to correct and why, then it'll be your (Shipla's) job to make the corrections in the best way you see fit.
+
+If this doesn't work for you please say and we'll come up with a better way of communicating tasks.
+
+
+TODO:
+================
+(1) First thing I noticed when landing on this project is the ./target/ directory was committed.  This isn't something that is normally committed in a Java project.  The reason being everything in the target directory is created by the compiler, and each time the project is compiled it'll be different.  So its useless to share your compiled files via source control because I can't use them.  When I compile I'll have to compile .class files for my machine, not yours.
+
+Shilpa added the .gitignore file in master as was able to make changes in the branch.
+Tracey fixed with .gitignore file
+Shilpa fixed here .gitignore file in master. Removed the * mark "*.classpath".
+
+
+(2) Second thing I noticed was the .classpath and .project files were committed.  Typically I don't commit the .classpath and .project files because these are unique to each developer's setup.  For example I may not be using eclipse at all, or I may have mine setup differently than yours.  We want to avoid anything that only you or your personal machine's configuration or setup can use.
+
+Shilpa added the .gitignore file in master as was able to make changes in the branch.
+Tracey fixed with .gitignore file
+
+
+
+(3) Same issue for the json_output directory.  This is the results of your personal Cucumber execution.  We don't want your results saved in the project.  Typically we'd upload them to some permanent storage for consumption by the larger project, but we'll work on that much later down the road.
+
+Shilpa added the .gitignore file in master as was able to make changes in the branch.
+Tracey fixed with .gitignore file
+
+
+
+(4) Understand the structure of a Maven project.  At the root of every Maven project there is a "./src" directory.  Then you have "./src/main/" and "./src.test".  Typically no test classes or resources go in the ".src/main" directories.  That directory is strictly for application code.  Since this project has no application, all of the test code, including anything to do with running your cucumber tests should go in the "./src/test" directory.
+Shilpa moved the files and folder from .src/main to .src/test in the master. Need to make same changes in the branch(LearningKAyakBBD).
+
+To correct:  Move the files to their appropriate locations then I would suggest studying up on Maven.  It is important to have a good understanding of tools such as Maven and _why_ its projects are built this way:
+
+https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html
+-AND THEN-
+https://maven.apache.org/guides/index.html
+
+
+
+(5) Start a README.md.  This should get you started: https://medium.com/@meakaakka/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3. For this project we won't need every section shown in this guide.  Just include the sections you think are important.
+Here are a few good guides for markdown formatting, or just Google it:
+https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html
+https://www.markdownguide.org/basic-syntax/
+
+Shilpa added a readme file in master as was not able to work in the branch.
+Let's skip #5 for now.  It's not very important at this time, more of a nice to have.
+
+
+
+(6) First technical problem:  The project won't build on my system.  Maven does not know what version of Java to use.  Since Maven is the build management system you'll need to figure out how to configure Maven so that the system knows what version of Java this project should be built with.  (Hint: I'd expect it to be at least Java 11 if not higher.)
+
+
+Tracey fixed.  Have a look at pom.xml, lines 16 and 17.  There I define both the source and target versions of Java.  I assumed you're using Java 11.  If not change these values to match whatever version of Java you're using and I'll change my workspace to match yours.
+
+Shilpa - I am using java 1.8.0_251 version.
+
+
+

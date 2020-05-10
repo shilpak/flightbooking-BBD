@@ -1,0 +1,11 @@
+# ignore compiled classes and resources
+target/
+
+# ignore IDE files
+.classpath
+.project
+
+
+# ignore project-specific directories
+json_output/
+
