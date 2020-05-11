@@ -1,0 +1,47 @@
+Maven is essentially a project management and comprehension tool.
+What is SnapShot version
+During the release process, a version of x.y-SNAPSHOT changes to x.y. The release process also increments the development 
+version to x.(y+1)-SNAPSHOT.For example, version 1.0-SNAPSHOT is released as version 1.0, and the new development version is version 1.1-SNAPSHOT.
+
+http://tutorials.jenkov.com/maven/maven-archetypes.html
+
+Inside each build life cycle there are build phases, and inside each build phase there are build goals.
+mvn clean	Clears the target directory into which Maven normally builds your project.
+mvn package	Builds the project and packages the resulting JAR file into the target directory.
+mvn package -Dmaven.test.skip=true	Builds the project and packages the resulting JAR file into the target directory - without running the unit tests during the build.
+mvn install	Builds the project described by your Maven POM file and installs the resulting artifact (JAR) into your local Maven repository
+
+command ---mvn eclipse:eclipse == generate a new Java project including files for the Eclipse IDE
+
+Generating unit test report === mvn surefire-report:report
+
+How to syn the local and remote branch
+git pull origin branch_name
+git push origin <local-branch-name>:<remote-branch-name> or git push origin branch-name
+
+MAven Build Cycle :: commands to remember
+validate
+compile
+test
+package integration-test
+verify
+install
+deploy
+
+Transitive Dependencies(dependency Hierarchy in POX.xml)
+junit --> hamcrest-core
+use <exclusion> remove the transitive dependencies
+Add groupId and artifactId of the dependency.
+
+Decide the scope of Dependencies:
+Add <scope> inside the dependency 
+1. 		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13</version>
+			<scope>test</scope>
+				or
+			<scope>compile</scope>==default
+			<scope>runtime</scope>==required for execution in jar file in test classpath
+			
+		</dependency>
