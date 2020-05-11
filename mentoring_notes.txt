@@ -35,6 +35,15 @@ https://maven.apache.org/guides/introduction/introduction-to-the-standard-direct
 -AND THEN-
 https://maven.apache.org/guides/index.html
 
+Worked on creating a project from scratch through windows cmd. I started from basic : installed maven, setting environment and then by using maven commands on cmd.
+It was the first time I created project through cmd. Mostly I used the eclipse IDE to install the maven then work on the project.
+Reference websites: https://maven.apache.org/guides/getting-started/index.html === I was getting error messages while following this website. Tried to google it but was not able to fix it.
+I also refrred this two wesite http://tutorials.jenkov.com/maven/maven-archetypes.html and https://www.toolsqa.com/java/maven/maven-introduction/ this site made things easier to understand.
+Learned to understand the how to use POM.xml file. Created a project called mavenproject. I need to practice by starting a new working project to increase my confidence.
+Noted some imp points in mavenpoints.txt will continue to add as I continue to learn.
+
+**Most important I learned how to sync the local branch with the remote branch==> git pull and then git push****
+
 
 
 (5) Start a README.md.  This should get you started: https://medium.com/@meakaakka/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3. For this project we won't need every section shown in this guide.  Just include the sections you think are important.
